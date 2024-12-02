@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar"; // Adjust the path based on your project structure
+import Navbar from "./components/NavBar"; // Adjust the path based on your project structure
 
 const App: React.FC = () => {
   return (

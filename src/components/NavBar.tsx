@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./button";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false); // State to toggle mobile menu
@@ -20,15 +21,9 @@ const Navbar: React.FC = () => {
 
           {/* Links for larger screens */}
           <div className="hidden md:flex space-x-4">
-            <button className="hover:bg-sky-900 hover:text-white font-poppins py-2 px-4 rounded-full">
-              <a href="#about">About</a>
-            </button>
-            <button className="hover:bg-sky-900 hover:text-white font-poppins py-2 px-4 rounded-full">
-              <a href="#projects">Resume</a>
-            </button>
-            <button className="hover:bg-sky-900 hover:text-white font-poppins py-2 px-4 rounded-full">
-              <a href="#contact">Contact</a>
-            </button>
+            <Button text="About" href="#about" />
+            <Button text="Resume" href="#projects" />
+            <Button text="Contact" href="#contact" />
           </div>
 
           {/* Hamburger menu for small screens */}
