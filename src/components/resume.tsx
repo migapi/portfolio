@@ -2,7 +2,7 @@ const Resume: React.FC = () => {
   return (
     <div
       id="resume"
-      className="h-screen w-screen flex flex-col pl-10 pr-10 font-serif"
+      className="h-screen w-screen flex flex-col pl-20 pr-32 font-serif"
     >
       <h1 className="text-5xl font-bold">Resume</h1>
       {/*first resume entry*/}
