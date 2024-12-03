@@ -1,25 +1,28 @@
 import React from "react";
 
 import catImage from "./assets/images/cat.png";
-import Navbar from "./components/NavBar"; // Adjust the path based on your project structure
+import Navbar from "./components/navbar";
 
 const App: React.FC = () => {
   return (
     <div>
-      <Navbar /> {/* Include the Navbar at the top */}
-      <main className="p-4">
-        <div id="home" className="h-screen">
-          <img className="object-right-bottom" src={catImage} alt="catImage" />
+      <Navbar />
+      <main>
+        <div id="home" className="h-screen w-screen relative">
+          <img
+            className="absolute bottom-0 right-0 w-35 h-35 max-w-full max-h-full z-0"
+            src={catImage}
+            alt="catImage"
+          />
         </div>
-        <div id="about" className="h-screen">
+        <div id="about" className="h-screen w-screen">
           <h1 className="text-3xl font-poppins">About Me</h1>
           <p className="mt-2 font-poppins">
             Welcome to my portfolio! I’m excited to showcase my projects and
             skills.
           </p>
         </div>
-
-        <div id="projects" className="h-screen">
+        <div id="projects" className="h-screen w-screen">
           <h1 className="text-3xl font-poppins">Resume</h1>
           {/*first resume entry*/}
           <div className="float-left mt-10 font-poppins pr-10">
@@ -44,7 +47,7 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div id="contact" className="h-screen">
+        <div id="contact" className="h-screen w-screen">
           <h1 className="text-3xl font-poppins">Contact</h1>
           <p className="mt-2 font-poppins">
             Feel free to reach out to me anytime!
