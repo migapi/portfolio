@@ -1,4 +1,6 @@
 import React from "react";
+
+import catImage from "./assets/images/cat.png";
 import Navbar from "./components/NavBar"; // Adjust the path based on your project structure
 
 const App: React.FC = () => {
@@ -6,7 +8,9 @@ const App: React.FC = () => {
     <div>
       <Navbar /> {/* Include the Navbar at the top */}
       <main className="p-4">
-        <div id="home" className="h-screen"></div>
+        <div id="home" className="h-screen">
+          <img className="object-right-bottom" src={catImage} alt="catImage" />
+        </div>
         <div id="about" className="h-screen">
           <h1 className="text-3xl font-poppins">About Me</h1>
           <p className="mt-2 font-poppins">
