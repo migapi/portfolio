@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <main className="space-y-20">
+      <main className="space-y-32">
         <Home />
         <Resume />
         <Contact />
