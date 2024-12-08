@@ -4,7 +4,7 @@ const Resume: React.FC = () => {
   return (
     <div
       id="resume"
-      className="min-h-screen w-screen flex flex-col pl-20 pr-32 pt-20 pb-20 space-y-16"
+      className="min-h-screen w-screen flex flex-col pt-28 pl-5 pr-5 md:pl-20 md:pr-32 pb-20 space-y-16"
     >
       <h1 className="text-5xl font-bold">Resume</h1>
       <ResumeEntry
