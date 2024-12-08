@@ -9,14 +9,14 @@ const App: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <main className="snap-y snap-mandatory h-screen overflow-y-scroll">
-        <div className="snap-start h-screen">
+      <main className="snap-y snap-mandatory overflow-y-scroll">
+        <div className="snap-start">
           <Home />
         </div>
-        <div className="snap-start h-screen">
+        <div className="snap-start">
           <Resume />
         </div>
-        <div className="snap-start h-screen">
+        <div className="snap-start">
           <Contact />
         </div>
       </main>
